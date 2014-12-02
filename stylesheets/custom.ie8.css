@@ -1,0 +1,43 @@
+@import url("/stylesheets/ie8.css");
+
+.footer
+{
+    letter-spacing: -0.05em;
+}
+
+.table-box .footer ul.pager li a
+{
+    padding: 0 2px;
+}
+
+.pagination
+{
+    margin-left: -50px;
+}
+
+#account-billing-fld-number div.controls span.help-inline
+{
+    width: 160px;
+}
+
+#account-billing-fld-number div.controls span.arrow
+{
+    left: 140px;
+}
+
+#account-billing-fld-cvn div.controls span.help-inline
+{
+    top: 25px;
+    width: 90px;
+    right: -135px;
+}
+
+#account-billing-fld-name div.controls span.help-inline
+{
+    width: 240px;
+}
+
+#account-billing-fld-exp div.controls span.help-inline
+{
+    right: -190px;
+}

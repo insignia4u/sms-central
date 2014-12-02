@@ -1,0 +1,415 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,800,800italic,600,600italic,400italic,300italic,300);
+* {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
+.cf, .container {
+  *zoom: 1;
+}
+.cf:before, .container:before, .cf:after, .container:after {
+  content: " ";
+  display: table;
+}
+.cf:after, .container:after {
+  clear: both;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+*, *:focus {
+  outline: none;
+}
+
+body {
+  background: white url("/images/bg_pattern.png");
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+a {
+  color: #00aeef;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 978px;
+  margin: 0 auto;
+}
+
+.col-main,
+.col-side {
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+
+.col-main {
+  width: 672px;
+}
+
+.col-side {
+  width: 253px;
+  margin-left: 53px;
+}
+
+#branding {
+  padding: 36px 0 25px 0;
+  float: left;
+  width: 100%;
+}
+#branding #video-link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #666666;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+}
+#branding #video-link i {
+  float: right;
+  background-image: url("/images/icon-play.png");
+  width: 26px;
+  height: 18px;
+  margin-left: 8px;
+  position: relative;
+  z-index: 1;
+  top: 1px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+  #branding #video-link i {
+    background-image: url("icon-play@2x.png");
+    background-size: 26px 18px;
+  }
+}
+#branding #logo {
+  display: inline-block;
+}
+#branding #logo img {
+  display: block;
+}
+
+#body {
+  padding: 40px 0 100px 0;
+}
+#body .box {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+#body .box .box-padding {
+  padding: 45px 20px 55px 50px;
+}
+#body .box h2 {
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+#body .box h4 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  max-width: 365px;
+  margin: 0 0 30px 0;
+}
+#body #sms-logo {
+  background-image: url("/images/smscentral-logo.png");
+  width: 191px;
+  height: 48px;
+  display: block;
+  margin: 16px 0 45px 5px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+  #body #sms-logo {
+    background-image: url("smscentral-logo@2x.png");
+    background-size: 191px 48px;
+  }
+}
+#body .side-block {
+  margin: 0 0 50px 0;
+  width: 290px;
+}
+#body .side-block h3 {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+#body .side-block .text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 200;
+}
+#body .side-block p, #body .side-block ul {
+  margin: 10px 0 0 0;
+}
+#body .side-block ul {
+  font-style: italic;
+}
+#body .side-block ul li {
+  font-weight: 200;
+  margin: 17px 0;
+  letter-spacing: 0.01em;
+  font-size: 16px;
+  line-height: 16px;
+}
+#body .side-block ul li i {
+  float: left;
+  background-image: url("/images/icon-check.png");
+  width: 17px;
+  height: 17px;
+  position: relative;
+  z-index: 1;
+  top: -1px;
+  margin: 0 8px 0 4px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+  #body .side-block ul li i {
+    background-image: url("icon-check@2x.png");
+    background-size: 17px 17px;
+  }
+}
+#body .side-block ul li a, #body .side-block ul li strong {
+  font-weight: 400;
+}
+#body .side-block ul li a {
+  text-decoration: underline;
+}
+#body .side-block ul li a:hover {
+  text-decoration: none;
+}
+#body .side-block.reasons-block h3 i {
+  display: inline-block;
+  background-image: url("/images/icon-hearth.png");
+  width: 22px;
+  height: 19px;
+  position: relative;
+  z-index: 1;
+  top: 2px;
+  text-indent: -9999px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+  #body .side-block.reasons-block h3 i {
+    background-image: url("icon-hearth@2x.png");
+    background-size: 22px 19px;
+  }
+}
+#body .side-block.help-block h3 i {
+  float: left;
+  background-image: url("/images/icon-info.png");
+  width: 24px;
+  height: 24px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  margin: 0 4px 0 0;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+  #body .side-block.help-block h3 i {
+    background-image: url("icon-info@2x.png");
+    background-size: 24px 24px;
+  }
+}
+
+#header {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 40px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+#header ul {
+  float: right;
+}
+#header ul li {
+  float: left;
+}
+#header ul li a {
+  font-size: 12px;
+  line-height: 40px;
+  display: block;
+  font-weight: 600;
+  margin-left: 35px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #cdcdcd;
+  background: #f5f5f5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  font-size: 14px;
+  line-height: 44px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0 20px;
+  height: 44px;
+  width: 278px;
+  border-radius: 3px;
+}
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  background: white;
+  box-shadow: none;
+}
+form button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #007ca8;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 52px;
+  position: relative;
+  z-index: 1;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+form button span {
+  border-radius: 4px;
+  font-size: 24px;
+  line-height: 50px;
+  height: 50px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  padding: 0 20px 0 24px;
+  text-shadow: -1px -1px 1px #0889b9;
+  font-weight: 700;
+  border: 1px solid #007ca8;
+  background-image: linear-gradient(bottom, #00a4e0 0%, #21bbef 99%, #6dd0f7 100%);
+  background-image: -o-linear-gradient(bottom, #00a4e0 0%, #21bbef 99%, #6dd0f7 100%);
+  background-image: -moz-linear-gradient(bottom, #00a4e0 0%, #21bbef 99%, #6dd0f7 100%);
+  background-image: -webkit-linear-gradient(bottom, #00a4e0 0%, #21bbef 99%, #6dd0f7 100%);
+  background-image: -ms-linear-gradient(bottom, #00a4e0 0%, #21bbef 99%, #6dd0f7 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00a4e0), color-stop(0.99, #21bbef), color-stop(1, #6dd0f7));
+  box-shadow: inset 0 2px 1px -1px #6dd1f6;
+}
+form button span i {
+  background-image: url("/images/btn-arrow.png");
+  width: 12px;
+  height: 20px;
+  float: right;
+  position: relative;
+  z-index: 1;
+  top: 15px;
+  margin-left: 14px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 144dpi) {
+  form button span i {
+    background-image: url("btn-arrow@2x.png");
+    background-size: 12px 20px;
+  }
+}
+form button:hover span {
+  background-image: linear-gradient(bottom, #02aeec 5%, #23baf1 99%, #6ed3f4 100%);
+  background-image: -o-linear-gradient(bottom, #02aeec 5%, #23baf1 99%, #6ed3f4 100%);
+  background-image: -moz-linear-gradient(bottom, #02aeec 5%, #23baf1 99%, #6ed3f4 100%);
+  background-image: -webkit-linear-gradient(bottom, #02aeec 5%, #23baf1 99%, #6ed3f4 100%);
+  background-image: -ms-linear-gradient(bottom, #02aeec 5%, #23baf1 99%, #6ed3f4 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.05, #02aeec), color-stop(0.99, #23baf1), color-stop(1, #6ed3f4));
+  top: -3px;
+}
+form button:active span {
+  color: #006a91;
+  text-shadow: 0 1px 1px #36b9ea;
+  background-image: linear-gradient(bottom, #00a4e5 0%, #0089bb 99%, #0278aa 100%);
+  background-image: -o-linear-gradient(bottom, #00a4e5 0%, #0089bb 99%, #0278aa 100%);
+  background-image: -moz-linear-gradient(bottom, #00a4e5 0%, #0089bb 99%, #0278aa 100%);
+  background-image: -webkit-linear-gradient(bottom, #00a4e5 0%, #0089bb 99%, #0278aa 100%);
+  background-image: -ms-linear-gradient(bottom, #00a4e5 0%, #0089bb 99%, #0278aa 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00a4e5), color-stop(0.99, #0089bb), color-stop(1, #0278aa));
+}
+form p.disclaimer {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 50px 0 25px 0;
+  font-style: italic;
+  font-weight: 200;
+}
+form p.disclaimer a {
+  text-decoration: underline;
+}
+form p.disclaimer a:hover {
+  text-decoration: none;
+}
+form .control-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+form .control-group .help-inline {
+  padding: 13px 12px 12px 12px;
+  background-color: #ffffff;
+  border: 1px solid #00aeef;
+  position: absolute;
+  z-index: 2;
+  left: 336px;
+  font-weight: 400;
+  color: #00aeef;
+  font-size: 13px;
+  line-height: 19px;
+  text-shadow: none;
+  border-radius: 3px;
+  visibility: hidden;
+}
+form .control-group .help-inline .arrow {
+  background: transparent url("/images/inline-help-info.png");
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  z-index: 1;
+  margin: 4px 0 0 -18px;
+}
+form .control-group .help-inline.long-text {
+  top: -9px;
+}
+form .control-group .help-inline.long-text .arrow {
+  margin-top: 13px;
+}
+form .control-group.focus .help-inline {
+  visibility: visible;
+  z-index: 3;
+}
+form .control-group.error input {
+  border-color: #ee9ea0;
+}
+form .control-group.error .help-inline {
+  visibility: visible;
+  z-index: 2;
+  background-color: #ffffff;
+  border-color: #ec5459;
+  color: #ec5459;
+}
+form .control-group.error .help-inline .arrow {
+  background: transparent url("/images/inline-help-error.png");
+}
+form .control-group.buttons-group {
+  margin-bottom: 0;
+}

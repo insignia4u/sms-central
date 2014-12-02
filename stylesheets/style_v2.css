@@ -1,0 +1,62 @@
+.customselect2.w92 {
+  width: 89px !important;
+}
+.customselect2.w160 {
+  width: 160px !important;
+}
+a.customselect2:after {
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 1px;
+  background: #cdcdcd;
+  top: 0;
+  right: 38px;
+}
+.add-condition {
+  color: #00aeef;
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: underline;
+  position: relative;
+  cursor: pointer;
+}
+.add-condition:after {
+  background: url("../images/plus.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  left: 119%;
+  position: absolute;
+  content: "";
+}
+.segment-item {
+  position: relative;
+}
+.segment-item .button-close {
+  position: absolute;
+  background: url("../images/close.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 11px;
+  cursor: pointer;
+}
+.new-segment {
+  padding-left: 4px;
+  padding-top: 27px;
+  padding-bottom: 35px;
+  position: relative;
+}
+.new-segment .w92 {
+  margin-left: 9px;
+}
+.new-segment .inpt {
+  margin-left: 12px;
+  width: 180px;
+}
+.new-segment .add-condition {
+  top: 37px;
+  position: absolute;
+  right: 96px;
+  z-index: 50;
+}

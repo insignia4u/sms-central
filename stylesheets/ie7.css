@@ -1,0 +1,341 @@
+/* -----------------------
+:: Container
+--------------------------*/
+.container{
+	overflow:hidden;
+}
+
+.filtertable .btnsform{
+	padding: 0 1px 1px 0;
+}
+
+/* -----------------------
+:: Header
+--------------------------*/
+.header-navbar-submenu ul.nav li{
+	float: left;
+}
+
+/* -----------------------
+:: Numbers
+--------------------------*/
+header .header-inner .col-right .numbers{
+	float: right;
+}
+header .header-inner .col-right .button{
+	clear: both;
+}
+header .header-inner .col-right .numbers ul li .content.level1{
+	z-index: 1;
+}
+
+/* -----------------------
+:: Nav (stacked)
+--------------------------*/
+.sidebar .nav li, .sidebar .nav a, .sidebar .nav label{
+	line-height: 33px;
+	height: 33px;
+}
+.sidebar .nav li.active a span.blueactive, 
+.sidebar .nav li.active label span.blueactive{
+	right: -11px;
+	top: 0px;
+	height: 33px;
+}
+
+/* -----------------------
+:: Contact page
+--------------------------*/
+.bartop input{
+	background-color: #FFFFFF;
+}
+.filtertable{
+	width: 500px;
+}
+.form-inline .datepicker-input{
+	width: 222px;
+}
+.bartop label{
+	float: left;
+}
+.datepicker-input input{
+	width: 96px;
+	float: left;
+}
+.form-search .input-append, 
+.form-inline .input-append, 
+.form-search .input-prepend, 
+.form-inline .input-prepend{
+	width: 143px;
+}
+
+/* -----------------------
+:: Datepicker
+--------------------------*/
+.datepicker{
+	background: url("../images/datepicker-month-bg.png") center top no-repeat;
+}
+.datepicker thead{
+	background: none;
+}
+
+
+/* -----------------------
+:: Purchase
+--------------------------*/
+.select-card .control-label{
+	float: left;
+	padding-top: 10px;
+}
+.packages li .level3 {
+    height: 198px;
+}
+.packages li .packbutton .box{
+	left: -4px;
+}
+.packages li .packbutton .box:hover{
+	left: 0px;
+}
+
+/* -----------------------
+:: Breadcrumbs
+--------------------------*/
+.breadcrumb{
+    float: left; /*"emula" inline-block, autoajusta ancho */
+}
+
+/* -----------------------
+:: Forms
+--------------------------*/
+.form-horizontal{
+    /* overflow: scroll; */
+}
+.form-horizontal .add-on{
+    float: left;
+}
+.form-horizontal .control-group .controls{
+    padding-left: 0;
+}
+.form-horizontal .input-prepend{
+    /* width: 321px; */
+    float: left;
+    margin-left: 0;
+}
+.form-horizontal .input-prepend input{
+    float: left;
+}
+.error.control-group .controls .option3.help-inline{
+    right: -185px;
+}
+.form-horizontal fieldset{
+    padding-top: 15px;
+}
+/* search box */
+.search-box input.lup{
+    background-color: #CDCDCD;
+    background-position: -5px center;
+	border: 0 none;
+    padding: 1px;
+	padding-left: none;
+}
+/* login box */
+.login-box .row-fluid{
+    padding-top: 15px;
+}
+.login-box .custom-checkbox{
+    width: 230px;
+}
+.login-box .checkbox.controls label{
+    font-size: 10px;
+}
+
+
+/* -----------------------
+:: Multiple selection
+--------------------------*/
+.multiple-selection ul.selected li, .tagsarea li{
+    float:left;
+}
+
+/* -----------------------
+:: Dropdown
+--------------------------*/
+.timepicker .selector .dropdown a.dropdown-toggle,
+.timepicker .selector .dropdown a.dropdown-toggle:hover{
+    text-align: left;
+    text-indent: 15px;
+}
+.timepicker .selector .dropdown a.dropdown-toggle .add-on{
+    text-align: center;
+    text-indent: -5px;
+}
+.nav .dropdown a.dropdown-toggle .add-on{
+	margin-top: -35px;
+	padding-top: 15px;
+	padding-bottom: 0;
+	height: 21px;
+}
+
+/* -----------------------
+:: Nav actions
+--------------------------*/
+.nav.actions li{
+    float: left;
+}
+
+/* -----------------------
+:: Badges
+--------------------------*/
+.label-important span, .badge-important span{
+    bottom:-2px;
+}
+
+.filtertable .btnsform, .filtertable .btnsform input{
+	float: left;
+}
+.filtertable .btnsform input:hover{
+	float: left;
+	border: 1px solid #b8b8b8;
+}
+.form-inline .datepicker-input.dp2{
+	width: 175px;
+}
+
+
+/* -----------------------
+:: Buttons
+--------------------------*/
+/*.btnsform input, .btnsform button{
+	background:#03a3e8 url(../images/buttonieinf.gif) repeat-x right top !important;
+}*/
+.btnsform button.btn-info.btn-log, 
+.btnsform input.btn-info.btn-log[type="submit"], 
+button.btn-info.btn-log, 
+input.btn-info.btn-log[type="submit"],
+input.btn-info.btn-log[type="submit"] {
+  background:#03a3e8 url(../images/buttonieinf.gif) repeat-x right top !important;
+}
+
+.btnsform:hover button.btn-info.btn-log, 
+.btnsform:hover input.btn-info.btn-log[type="submit"], 
+button.btn-info.btn-log:hover, 
+input.btn-info.btn-log[type="submit"],
+input.btn-info.btn-log[type="submit"]:hover {
+	background:#03a3e8 url(../images/buttonieinf.gif) repeat-x right bottom !important;
+}
+
+.credit .level2 {
+    height: 109px;
+}
+
+.credit .level3 {
+    height: 111px;
+}
+
+.wizard .multiple-selection {
+    margin: 8px 0 12px;
+}
+
+#mcttCo{
+	left: 1px!important;
+}
+
+.modal-body .table .custom-checkbox {
+    top: 10px;
+}
+
+.contentleft .credit table .numphone .icon-trash {
+    top: 16px;
+}
+.sep{
+	padding: 0 0 10px;
+}
+.withtemplate, .withouttemplate {
+    padding: 25px 0 0;
+}
+#newtemplate form .box1, .msj-info{
+	position: relative;
+}
+#newtemplate form .box1 p {
+    width: 275px;
+    float: right;
+    margin: 0;
+}
+.withouttemplate .tabspace{
+	padding: 10px 0 0 28px;
+}
+
+.btnsform {
+  background: none;
+}
+.btnsform input{
+  line-height: 20px!important;
+}
+.btnsform:hover input{
+  border-bottom:#B8B8B8 solid 4px !important;
+  height: 33px!important;
+}
+.credit .level1{
+  min-height: 72px;
+}
+
+.btnsform-success .btn{
+  background:#03a3e8 url(../images/success-ie.gif) repeat-x right top !important;
+  margin: 0;
+}
+
+.btnsform-success:hover .btn{
+  background:#34792F url(../images/success-ie.gif) repeat-x right -51px !important;
+  height: 51px!important;
+  line-height: 34px !important;
+  margin: 0;
+  display: block;
+  border-bottom:#34792F solid 4px !important;
+}
+.btnsform-success {
+  background: none repeat scroll 0 0 #34792F !important;
+}
+
+.btnsform input[type=submit],
+.btnsform input[type=reset],
+.btnsform input[type=button]{
+  filter:chroma(color=#000000);
+}
+.login-box span.btnsform{
+  height: 35px;
+}
+#header{
+  border-bottom: #dfdfdf solid 1px;
+}
+form.form-type1 .datepicker-input .add-on{
+  float: left;
+}
+
+#header .row{
+  position: relative;
+  z-index: 3;
+}
+
+#header .container{
+  height: auto!important;
+  height: 93px;
+  min-height: 93px;
+  overflow: none;
+}
+
+.table thead a, .table thead a:hover{
+  font-size: 12px;
+}
+
+div.tagsinput{
+  margin-top:9px;
+}
+.btn, .btn-info span,
+.btnsform.btn-info input,
+.btnsform.btn-info button{
+  font-weight: normal;
+}
+
+.sidebar .nav {
+  padding: 0 0 20px;
+}

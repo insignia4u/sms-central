@@ -1,0 +1,98 @@
+/* -----------------------
+:: Header - Logo
+--------------------------*/
+header .header-inner .col-left{
+	width: 80%;
+}
+
+/* -----------------------
+:: Nav (stacked)
+--------------------------*/
+.sidebar .nav a{
+	line-height: 33px;
+	height: 33px;
+}
+.sidebar .nav li.active a span.blueactive, 
+.sidebar .nav li.active label span.blueactive{
+	right: -11px;
+}
+
+/* -----------------------
+:: Purchase
+--------------------------*/
+.packages li .level2 {
+    height: 200px;
+}
+.packages li .level3 {
+    height: 202px;
+}
+
+/* -----------------------
+:: Forms
+--------------------------*/
+.error.control-group .controls .option3.help-inline{
+    right: -185px;
+}
+/* login box */
+.login-box .checkbox.controls label{
+    font-size: 10px;
+}
+
+/* -----------------------
+:: Buttons
+--------------------------*/
+/*.btnsform input, .btnsform button{
+	background:#03a3e8 url(../images/buttonieinf.gif) repeat-x right top !important;
+}*/
+.btnsform button.btn-info.btn-log, 
+.btnsform input.btn-info.btn-log[type="submit"], 
+button.btn-info.btn-log, 
+input.btn-info.btn-log[type="submit"],
+input.btn-info.btn-log[type="submit"] {
+  background:#03a3e8 url(../images/buttonieinf.gif) repeat-x right top !important;
+}
+
+.btnsform:hover button.btn-info.btn-log, 
+.btnsform:hover input.btn-info.btn-log[type="submit"], 
+button.btn-info.btn-log:hover, 
+input.btn-info.btn-log[type="submit"],
+input.btn-info.btn-log[type="submit"]:hover {
+  background:#03a3e8 url(../images/buttonieinf.gif) repeat-x right bottom !important;
+}
+.btnsform-success .btn{
+  background:#03a3e8 url(../images/success-ie.gif) repeat-x right top !important;
+}
+
+.btnsform-success:hover .btn{
+  background:#03a3e8 url(../images/success-ie.gif) repeat-x right bottom !important;
+  height: 51px!important;
+  line-height: 34px !important;
+}
+
+
+.credit .level2 {
+    height: 108px;
+}
+.credit .level3 {
+    height: 110px;
+}
+
+#mcttCo{
+	left: 1px!important;
+}
+
+#header{
+  border-bottom: #dfdfdf solid 1px;
+}
+form.form-type1 .datepicker-input .add-on{
+  float: left;
+}
+
+.table thead a{
+  font-size: 12px;
+}
+.btn, .btn-info span,
+.btnsform.btn-info input,
+.btnsform.btn-info button{
+  font-weight: normal;
+}

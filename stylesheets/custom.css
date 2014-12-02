@@ -1,0 +1,305 @@
+.alert { z-index:10000; }
+
+.alert {
+    position:absolute;top:0;width:100%;
+    padding-right:0px;
+    padding-left:0px;
+    margin-right:0px;
+    margin-left:0px;
+}
+.alert .close {
+    right:25px;
+}
+
+.alert-danger, .alert-error, .alert-success, .alert-info, .notification-info {
+    opacity:0.95;
+    filter: alpha(opacity=95);
+	position: fixed;
+}
+select 
+{
+    height: 38px;
+    padding: 0 0px 0 8px;
+    border: 1px solid #cdcdcd;
+
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 38px;
+
+    background-color: #f5f5f5;
+    -moz-transition: none;
+
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+select:focus {
+    border-color: #cdcdcd;
+    outline: 0 none;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    color: #666666;
+
+    -webkit-box-shadow: 0 0 0 #cdcdcd;
+    -moz-box-shadow: 0 0 0 #cdcdcd;
+    box-shadow: 0 0 0 #cdcdcd;
+}
+
+select option {
+    height: 38px;
+    padding: 0 0px 0 8px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 38px;
+}
+
+.select-xlarge {
+    width:294px;
+}
+
+.login-box {
+	width: 392px;
+	height: 372px;
+	margin: 100px auto 30px;
+}
+
+.login-box .login-help-links { padding-left: 20px; padding-right:20px; }
+.login-box .login-help-links a i { margin:0 10px; }
+.login-box .login-help-action { float:none; text-align:center; background:none; }
+
+.table-box.w980 .table-footer.no-image , .table-box.w728 .table-footer.no-image {
+    background-image:none; 
+ }
+	
+.login-box .controls {
+	margin-left:4px;
+}
+
+.control-group.error .controls .help-inline.option4 {
+        position:relative;
+        left:15px;
+        top: 0px;
+}
+
+.control-group.error .help-inline.option4 .arrow {
+	height: 10px;
+	width: 5px;
+	background-image: url(../images/help-block-arrow-left-red.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	left: -5px;
+	top: 11px;
+	z-index: 10px;
+}
+
+span .custom-formlabel, div .custom-formlabel {
+    font-size:12px;
+    color:#333;
+    vertical-align:top;
+    line-height:24px;
+    margin-right:20px;
+    height:30px;
+}
+
+span .custom-firstitem, div .custom-firstitem {
+    margin-top:10px;
+}
+
+.contentleft .cont .btn-nomargin {
+    margin-top:0px;
+}
+[class^="icon-"],[class*=" icon-"] {
+    margin-top:2px;
+}
+
+.btn-small [class^="icon-"] {
+	margin-top: 1px;
+}
+
+.form-horizontal .control-nobottommargin {
+    margin-bottom:4px;
+}
+
+.item .blue-bullet {
+  background-image: url(../images/dot.png);
+  background-repeat: no-repeat;
+  position:absolute;
+  height: 8px;
+  width: 8px;
+	z-index: 10px;
+    left: 7px;
+    margin-top: 15px;
+}
+
+
+.steps{
+	float: right;
+	position: relative;
+	right: -60px;
+}
+.steps a{
+    text-decoration:none;
+	color: #54c24d;
+}
+
+.steps li{
+	list-style: none;
+	float: left;
+	text-align: center;
+	color: #cecece;
+	font-size: 12px;
+	font-weight: 600;
+	border-top: #cecece solid 1px;
+	width: 106px;
+}
+.steps li.last{
+	border-top: none!important;
+}
+.steps li div, .steps li strong{
+	position: relative;
+  top: -25px;
+  left: -35px;
+  font-weight: 600;
+}
+.steps li div{
+	display: block;
+	width: 29px;
+	height: 29px;
+	line-height: 29px;
+	color: #fff;
+	margin: 0 auto;
+	border: #fff solid 10px;
+	border-bottom: #fff solid 5px;
+	background: #fff url(../images/icons2.png) no-repeat -90px -201px;
+	display: block;
+}
+.steps li.ok{
+	color: #54c24d;
+	border-top: #54c24d solid 1px;
+}
+.steps li.active{
+	color: #00AEEF;
+}
+.steps li.active div{
+	background: #fff url(../images/icons2.png) no-repeat -24px -201px;
+}
+.steps li.ok div{
+	background: #fff url(../images/icons2.png) no-repeat -57px -201px;
+}
+.steps li div span{
+	display: block;
+}
+.steps li.ok span{
+	background: url(../images/icons2.png) no-repeat -48px -98px;
+	text-indent: -99999px;
+}
+
+.ff-items li.ff-item-type-1.showitems,
+.ff-items li.ff-item-type-2.showitems,
+.ff-items li.ff-item-type-3.showitems,
+.ff-items li.ff-item-type-4.showitems,
+.ff-items li.ff-item-type-5.showitems 
+{
+  -webkit-transition: -webkit-transform 0.3s linear, width 0s linear 0.3s;
+  -moz-transition: -moz-transform 0.3s linear, width 0s linear 0.3s;
+  -o-transition: -o-transform 0.3s linear, width 0s linear 0.3s;
+  -ms-transition: -ms-transform 0.3s linear, width 0s linear 0.3s;
+  transition: transform 0.3s linear, width 0s linear 0.3s;
+}
+
+.ff-items li:not(.ff-item-type-1),
+.ff-items li:not(.ff-item-type-2),
+.ff-items li:not(.ff-item-type-3),
+.ff-items li:not(.ff-item-type-4),
+.ff-items li:not(.ff-item-type-5)
+{
+}
+
+@-webkit-keyframes scaleUp {
+}
+@-webkit-keyframes scaleDown {
+}
+@-moz-keyframes scaleUp {
+}
+@-moz-keyframes scaleDown {
+}
+@-o-keyframes scaleUp {
+}
+@-o-keyframes scaleDown {
+}
+@-ms-keyframes scaleUp {
+}
+@-ms-keyframes scaleDown {
+}
+@keyframes scaleUp {
+}
+@keyframes scaleDown {
+}
+
+.lbl-report {text-transform:uppercase;}
+
+.control-group .controls ul.selectmenu {margin: 0;}
+
+.packages li {margin: 0 0 20px 20px;}
+
+#account-billing-fld-number div.controls span.help-inline {width:142px; left: 87px;}
+#account-billing-fld-cvn div.controls span.help-inline {right: -120px; top: 18px;}
+
+#account-billing-fld-name div.controls span.help-inline {width:204px; top: 68px; left: 15px;}
+#account-billing-fld-name div.controls span.arrow {left: 60px;}
+#account-billing-fld-exp div.controls span.help-inline {right: -172px; top: 25px;}
+
+#account-billing-fld-minimumbalance div.controls span.help-inline {right: 0;}
+
+div.field-group-number-cvn {margin-bottom: 20px; min-height: 63px;}
+div.field-group-name-exp {margin-bottom: 20px; min-height: 48px;}
+
+.error li.dropdown a {border-color: #EE8184;}
+
+#year_dropdown, #month_dropdown {position: relative;}
+.table th.align-center, .table td.align-center { text-align:center; }
+
+dl {
+ width:100%;
+ overflow:hidden;
+}
+.simple-block .content dt, .simple-block .content dd{
+    float:left;
+    display:block;
+}
+.simple-block .content dd {
+    width :45%;
+}
+
+footer {
+    
+    width :100%;
+    bottom:0;
+}
+
+.no-word-wrap
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+.showresult
+{
+    padding: 6px 5px 0 0;
+}
+
+
+#dashboard-home  .filtertable {
+    border-right: 1px dotted #D1D1D1;
+}
+
+.innerpage h2 {
+	margin-bottom: 0;
+}

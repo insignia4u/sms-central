@@ -1,0 +1,1 @@
+$('a#Help').attr('href', 'https://fasttracksupport.zendesk.com/hc/en-us');

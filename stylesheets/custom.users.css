@@ -1,0 +1,30 @@
+/*overrides*/
+.table tbody tr.open td.list a {
+	background:none; 
+}
+
+
+.table tbody tr.open td {
+    background: url("../images/dashed.gif") repeat-x scroll left bottom transparent !important;
+    border-bottom: medium none;
+}
+
+.table tbody tr.open:hover td {
+    background: url("../images/dashed.gif") repeat-x scroll left bottom transparent !important;
+    border-bottom: medium none;
+}
+
+.table.table-top tbody .sublevels td {
+    border-bottom: medium none;
+    padding: 0;
+}
+
+
+.table tbody td.list a {
+    display: block;
+    line-height: 16px;
+}
+
+.table.table-top tbody td.first a {
+    display: inline-block;
+}

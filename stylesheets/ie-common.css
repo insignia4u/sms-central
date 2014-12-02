@@ -1,0 +1,335 @@
+/* ----------------------------------
+	:: Colores usados frecuentemente
+	
+	Celeste encabezado: #00AAE8
+------------------------------------*/
+
+/* -----------------------
+:: Outlines
+--------------------------*/
+a, input, button,
+a:hover, input:hover, button:hover,
+a:focus, input:focus, button:focus,
+a:active, input:active, button:active{
+	outline: 0;
+}
+
+/* -----------------------
+:: Header
+--------------------------*/
+.navbar {
+	background-color: #00AAE8;
+}
+
+/* -----------------------
+:: Tabs
+--------------------------*/
+.nav-tabs > li > a {
+	background-color: #EEEEEE;
+}
+
+/* -----------------------
+:: Tables
+--------------------------*/
+.table thead th{
+	background-color: #00AAE8;
+}
+
+/* -----------------------
+:: Custom checkboxes, radios
+--------------------------*/
+.custom-radio > input,
+.custom-checkbox > input{
+	/* se desalienta el uso de filters, pero en este
+	caso es necesario por c￳mo funciona el script para 
+	custom checkboxes */
+	filter: alpha(opacity = 0);
+}
+.tick{
+	display: none !important;
+}
+.checked .tick{
+	/* mostrar tilde */
+	display: block !important; 
+}
+
+/* -----------------------
+:: Contact page
+--------------------------*/
+.bartop{
+	background-color: #EEEEEE;
+}
+
+/* -----------------------
+:: Datepicker
+--------------------------*/
+.datepicker thead{
+	height: 20px;
+}
+.datepicker thead .dow {
+	background: #FFFFFF;
+	height: 10px;
+	line-height: 20px;
+}
+.datepicker thead .prev, 
+.datepicker thead .switch, 
+.datepicker thead .next{
+	height: 20px;
+}
+
+/* -----------------------
+:: Purchase
+--------------------------*/
+.level2, .level3{
+	left: 0;
+	top: 0;
+}
+.packages li .level2{
+	height: 196px;
+}
+.packages li .packbutton .box{
+	float: none;
+	background-color: #00AAE8;
+}
+.packages li .packbutton input{
+	float: none;
+	display: block;
+	width: 100% !important;
+}
+.contdown{
+	background: #F5F5F5;
+}
+.select-card .box{
+	border-bottom: 3px solid transparent;
+}
+.select-card .checked .box{
+	border-bottom: 3px solid #FFFFFF;
+}
+
+
+/* -----------------------
+:: Report
+--------------------------*/
+.ff-items li{
+    width: 251px !important;
+    -ms-transform: none !important;
+    display: none;
+}
+.ff-items li.showitems{
+    display: block;
+}
+.ff-container input {
+    display: block;
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+    margin: 0px; padding: 0px;
+	filter: alpha(opacity = 0);
+}
+.ff-container label{
+    cursor: pointer;
+}
+.sidebar .nav li.active label{
+    background-color: #00AEEF;
+    color: #fff;
+}
+.ff-container .active .icon-report{
+	background: url(../images/icons.png) no-repeat -12px -182px;
+	margin: 4px 10px 0 2px;
+    width: 17px;
+}
+.ff-container .active .icon-campaign{
+	background: url(../images/icons.png) no-repeat 3px -182px;
+	margin: 4px 10px 0 2px;
+    width: 17px;
+}
+.ff-container .active .icon-contact{
+	background: url(../images/icons.png) no-repeat -83px -179px;
+	margin: 0 10px 0 2px;
+    width: 17px;
+}
+.ff-container .active .icon-account{
+	background: url(../images/icons.png) no-repeat -65px -180px;
+	margin: 1px 10px 0 2px;
+    width: 17px;
+}
+.ff-container .active .icon-bulk{
+	background: url(../images/icons.png) no-repeat -30px -179px;
+	margin: 1px 10px 0 2px;
+    width: 17px;
+}
+.ff-container .active .icon-number{
+	background: url(../images/icons.png) no-repeat -48px -181px;
+	margin: 2px 10px 0 2px;
+    width: 17px;
+}
+
+
+/* -----------------------
+:: Alerts
+--------------------------*/
+.alert{
+    position: relative;
+}
+.alert .close{
+    filter: none;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+.alert-danger, .alert-error {
+    background-color: #C8191E;
+}
+.alert-success{
+    background-color: #2D9028;
+}
+.alert-info, .notification-info{
+    background-color: #2C3F80;
+}
+
+/* -----------------------
+:: Breadcrumbs
+--------------------------*/
+.breadcrumb li{
+    background-color: #EAEAEC;
+}
+
+/* -----------------------
+:: Buttons
+--------------------------*/
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+/* -----------------------
+:: Forms
+--------------------------*/
+/* login box */
+.login-box .form-horizontal .btn-log{
+    border: none !important;
+    background: #19b5eb url("../images/icons.png") -70px -124px;
+}
+.login-box .form-horizontal .btn-log:hover{
+    background: #0889B9 url("../images/icons.png") -212px -124px !important;
+}
+
+/* -----------------------
+:: Modals
+--------------------------*/
+
+.modal-header{
+  background-color: #EEEEEE;
+}
+
+/* -----------------------
+:: Buttons
+--------------------------*/
+
+.btn span, .btnsform input, .btnsform button, .btnsform:hover input, .btnsform:hover button{
+	background: url(../images/btngray.gif) 0 0;
+}
+
+
+
+.packages li .packbutton .box, .btn-info span, .btn-info:hover span{
+	background:#03a3e8 url(../images/btnblue.gif) repeat-x 0 0!important;
+}
+/*
+.btnsform:hover button.btn-info.btn-log, 
+.btnsform:hover input.btn-info.btn-log[type="submit"], 
+button.btn-info.btn-log:hover, 
+input.btn-info.btn-log[type="submit"]:hover {
+	background:#03a3e8 url(../images/btnblue.gif) repeat-x 0 0!important;
+}*/
+
+.btn-info:active span{
+	background: url(../images/btnblueactive.gif) repeat-x 0 0!important;
+}
+
+.btn-success span{
+	background: #4bbb47 url(../images/btngreen.gif) repeat-x 0 0!important;
+}
+
+.btn-danger span{
+	background: url(../images/btnred.gif) 0 0;
+}
+
+.dropdown a.dropdown-toggle, .ui-selectmenu, 
+#ptTimeSelectCntr .ui-widget-content .ptTimeSelectHrAmPmCntr,
+#ptTimeSelectCntr .ptTimeSelectHrCntr a, 
+#ptTimeSelectCntr .ptTimeSelectMinCntr a{
+	background: url(../images/graydeg.gif) 0 bottom;
+}
+
+.table thead th{
+	background: url(../images/bluedeg.gif) 0 bottom;
+}
+
+.nav-tabs li a{
+	background: url(../images/tabdeg.gif) 0 bottom;
+}
+
+.table tr.item td {
+	background: url(../images/tabledeg.gif) repeat-x 0 bottom;
+}
+
+.modal-header{
+	background: url(../images/modaldeg.gif) repeat-x 0 bottom;
+}
+
+.datepicker tbody td.active{
+	background: url(../images/datepdeg.gif) repeat-x 0 top;
+}
+
+.datepicker tbody td.active:hover{
+	background: url(../images/datepdeg.gif) repeat-x 0 bottom;
+}
+
+.table tbody tr.selected td{
+    background: #FFFFDF !important;
+}
+
+.credit-cards .icon-question-sign-gray, .helpicon {
+  height: 20px;
+  width: 20px;
+}
+
+.contentleft .credit table .numphone .icon-trash {
+  top: 4px;
+}
+.contentleft .credit .level2 {
+  height: 73px;
+}
+.contentleft .credit .level3 {
+	height: 75px;
+}
+.btn-big:hover span{
+  background: url(../images/greenhover.gif) repeat-x 0 0!important;
+}
+.btnsform.btn-big{
+  background:#58cb51;
+}
+.select2-container-multi .select2-choices .select2-search-choice{
+  filter:none;
+}
+.buttons-charts.btn-group .btn{
+  background: url(../images/btngray.gif) 0 0;
+}
+
+.buttons-charts.btn-group .btn.active{
+  background: url(../images/grayactive.gif) 0 0;
+}
+
+#message-log .table-box .detail ul li,
+#campaign-report .table-box .detail ul li{
+  font-weight: normal;
+}
+
+#message-log .table-box .detail ul,
+#campaign-report .table-box .detail ul {
+  left: 0;
+}

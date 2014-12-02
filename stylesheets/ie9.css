@@ -1,0 +1,22 @@
+/* -----------------------
+:: Sidebar
+--------------------------*/
+.sidebar .nav li.active a span.blueactive, .sidebar .nav li.active label span.blueactive {
+    background: url("../images/icons.png") no-repeat -291px -162px!important;
+    right: -13px!important;
+    width: 13px!important;
+}
+
+/* -----------------------
+:: Purchase
+--------------------------*/
+.select-card .box{
+	border-bottom: none;
+}
+
+.select-card .checked .box{
+	border-bottom: none;
+}
+.sidebar .nav a, .sidebar .nav label{
+  letter-spacing: -1px;
+}
