@@ -212,101 +212,69 @@
         </div>
         <div id="newtemplate" class="contentleft">
           <ul class="steps">
-            <li class="first ok"><a id="Settings" data-wf-action="SR - Campaign Contact - Clicked - Settings tab" href="https://my.smscentral.com.au/campaigns/wizard/settings/1810045">
-                <div><span>1</span></div><strong>SETTINGS</strong></a></li>
             <li class="active">
-              <div><span>2</span></div><strong>CONTACTS</strong>
-            </li>
-            <li class="nok">
-              <div><span>3</span></div><strong>MESSAGE</strong>
+              <div><span>1</span></div><strong>SETUP</strong>
             </li>
             <li class="last">
-              <div><span>4</span></div><strong>DELIVERY</strong>
+              <div><span>2</span></div><strong>ACTIONS</strong>
             </li>
           </ul>
-          <h2>New SMS Campaign</h2>
-          <h3>Select Your Contacts</h3>
-          <form id="contact_form" method="post" class="form-horizontal">
-            <input id="submit_type" type="hidden" name="submit_type" value="next">
-            <input id="contacts_count" type="hidden" name="contacts_count" value="194">
-            <ul class="listchecks">
-              <li id="check-01" class="licheck"><span class="custom-checkbox">
-                  <input id="recipients_all" type="checkbox" name="recipients_all" value="1" onclick="check_all_specific()" class="checkinput"><span class="box"><span class="tick"></span></span>
-                  <label id="label_all" for="recipients_all" class="checkbox">All Contacts (194)</label></span></li>
-              <li id="check-02" class="licheck"><span class="custom-checkbox">
-                  <input id="recipients_specific" type="checkbox" name="recipients_specific" value="1" onclick="check_all_specific()" class="checkinput"><span class="box"><span class="tick"></span></span>
-                  <label id="label_specific" for="recipients_specific" class="checkbox">Specific groups</label></span>
-                <div class="contentcheck">
-                  <div class="tabspace">
-                    <div style="width:420px;float:left" class="control-group dropdown search-box">
-                      <label><strong>Type in the group(s) you wish to send to</strong></label>
-                      <ul class="selectmenu nav">
-                        <li>
-                          <select id="select2" style="width: 400px; display: none;" name="selected_groups[]" multiple="" class="populate"></select>
-                        </li>
-                      </ul>
-                    </div><br>
-                  </div>
+          <h2>Add Rule</h2>
+          <form class="form-horizontal">
+            <div class="control-group">
+              <div class="custom-formlabel custom-firstitem">Email Address:</div>
+              <div>
+                <input name="emailaddress" placeholder="Email Address" type="text" value="" class="input-xlarge placeholder">
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="custom-formlabel custom-firstitem">Apply this rule when:</div>
+              <div><span class="custom-radio">
+                  <input checked="checked" name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
+                  <label class="radio">sending SMS</label></span><span class="custom-radio">
+                  <input name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
+                  <label class="radio">receiving SMS</label></span><span class="custom-radio">
+                  <input name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
+                  <label class="radio">triggered by data</label></span></div>
+            </div>
+            <h3 class="no-margin-left no-margin-top">Set Up your Rule</h3>
+            <div class="control-group licheck">
+              <div class="custom-formlabel custom-firstitem">When:</div>
+              <div class="contentcheck new-segment static no-padding-bottom no-padding-top js-insert-new-segment">
+                <div class="segment-item clearfix">
+                  <select name="number[]" class="select-segment customselect customselect2 w160">
+                    <option value="1">Phone number</option>
+                    <option value="2">Phone number</option>
+                    <option value="3">Phone number</option>
+                  </select>
+                  <select name="is[]" class="select-segment-is customselect customselect2 w92">
+                    <option value="1">is</option>
+                    <option value="2">is 2</option>
+                    <option value="3">is 3</option>
+                  </select>
+                  <select name="today[]" class="select-segment-is customselect customselect2 w160">
+                    <option value="1">Today</option>
+                    <option value="2">Today 2</option>
+                    <option value="3">Today 3</option>
+                  </select>
                 </div>
-              </li>
-              <li id="check-04" class="licheck"><span class="custom-checkbox">
-                  <input id="new_segment" type="checkbox" name="new_segment" value="1" class="checkinput"><span class="box"><span class="tick"></span></span>
-                  <label id="label_new" for="new_segment" class="checkbox">New Segment</label></span>
-                <div class="contentcheck new-segment js-insert-new-segment">
-                  <div class="add-condition js-add-condition"><span>Add condition</span>
-                    <div class="icon-plus"></div>
-                  </div>
-                  <div class="segment-item clearfix">
-                    <select name="number[]" class="select-segment customselect customselect2 w160">
-                      <option value="1">Phone number</option>
-                      <option value="2">Phone number</option>
-                      <option value="3">Phone number</option>
-                    </select>
-                    <select name="is[]" class="select-segment-is customselect customselect2 w92">
-                      <option value="1">is</option>
-                      <option value="2">is 2</option>
-                      <option value="3">is 3</option>
-                    </select>
-                    <input type="text" class="inpt">
-                  </div>
+                <div class="add-condition js-add-condition"><span>Add condition</span>
+                  <div class="icon-plus"></div>
                 </div>
-              </li>
-              <li id="check-03" class="licheck"><span class="custom-checkbox">
-                  <input id="recipients_new" type="checkbox" name="recipients_new" value="1" class="checkinput"><span class="box"><span class="tick"></span></span>
-                  <label id="label_new" for="recipients_new" class="checkbox">I want to add contacts manually</label></span>
-                <div class="contentcheck">
-                  <div><span style="display:none" class="custom-radio">
-                      <input id="selective_1" type="radio" name="newcontact" value="1" class="selectiveradio"><span class="box"><span class="tick"></span></span>
-                      <label class="radio">Upload a New List</label></span><span style="display:none" class="custom-radio">
-                      <input id="selective_2" type="radio" name="newcontact" checked="checked" value="2" class="selectiveradio"><span class="box"><span class="tick"></span></span>
-                      <label class="radio">Add Contacts Manually</label></span>
-                    <div id="selectivetemplate_1" style="display:none" class="selectivetemplate">
-                      <div class="control-group">
-                        <label><b>Select a File</b></label>
-                        <input type="text">
-                      </div><br>
-                      <div style="float:none;" class="info titleinfo"><i></i>Filename needs to be .csv, if you want an example of the fields<a href="#">Download a Template</a><br>If a file is larger than 5,000 contacts we"ll do this in background.</div>
-                    </div>
-                    <div id="selectivetemplate_2" style="display:none" class="selectivetemplate">
-                      <div style="margin-left:27px; width:500px;" class="multiple-tabs-auto">
-                        <input id="textareatags3" type="text" name="selected_contacts" value="" class="textareatags">
-                      </div><br><br>
-                      <div style="float:none;" class="info titleinfo tabspace"><i></i>Enter your contacts" mobile numbers here separated with comma.<br>You"ll be able to add more details to them under Contacts.</div>
-                    </div>
-                    <div style="display:none"><br>
-                      <p><b>Please select in case you would like to upload the contacts to a specific list</b></p><span class="custom-checkbox">
-                        <input id="newlist" type="checkbox" name="newlist" value="1"><span class="box"><span class="tick"></span></span>
-                        <label for="newlist" class="checkbox">Create a New List(s)</label></span><br><span class="custom-checkbox">
-                        <input id="existinglist" type="checkbox" name="existinglist" value="1"><span class="box"><span class="tick"></span></span>
-                        <label for="existinglist" class="checkbox">Add to an Existing List(s)</label></span>
-                    </div>
-                  </div><br style="clear:both">
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
+            <div class="control-group licheck">
+              <div class="custom-formlabel custom-firstitem">To:</div>
+              <select name="" class="select-segment customselect customselect2 w160">
+                <option value="1">All contacts</option>
+                <option value="2">All contacts 1</option>
+                <option value="3">All contacts 2</option>
+              </select>
+            </div>
             <!--if lte IE 7br(style="clear:both")
             -->
-            <div style="display:block" class="buttons"><a data-wf-action="SR - Campaign Contact - Clicked - Back" href="https://my.smscentral.com.au/campaigns/wizard/settings/1810045" class="btn btn-small btn-success left"><span><i class="icon-play-green"></i>Back</span></a><a id="campaign_next" data-wf-action="SR - Campaign Contact - Clicked - Next" href="javascript:void(0)" onclick="$('#submit_type').val('next'); $('#contact_form').submit()" class="btn btn-small btn-success right"><span>Next<i class="icon-play-green"></i></span></a><a data-wf-action="SR - Campaign Contact - Clicked - Cancel" href="https://my.smscentral.com.au/campaigns" class="btn btn-small"><span>Cancel</span></a><a data-wf-action="SR - Campaign Contact - Clicked - Save" href="javascript:void(0)" onclick="$('#submit_type').val('save');$('#contact_form').submit()" class="btn btn-small btn-info"><span>Save</span></a></div>
+            <div style="display:block; text-align: left" class="buttons"><a data-wf-action="SR - Campaign Contact - Clicked - Cancel" href="https://my.smscentral.com.au/campaigns" class="btn btn-small"><span>Cancel</span></a><a data-wf-action="SR - Campaign Contact - Clicked - Save" href="javascript:void(0)" onclick="$('#submit_type').val('save');$('#contact_form').submit()" class="btn btn-small btn-info"><span>Next</span>
+                <!--i.icon-play-green--></a></div>
           </form>
         </div>
         <script type="template/sms" id="template_condition">
@@ -322,7 +290,11 @@
               <option value="2">is 2</option>
               <option value="3">is 3</option>
             </select>
-            <input type="text" class="inpt">
+            <select name="today[]" class="select-segment-is customselect customselect2 w160">
+              <option value="1">Today</option>
+              <option value="2">Today 2</option>
+              <option value="3">Today 3</option>
+            </select>
           </div>
         </script>
       </div>
