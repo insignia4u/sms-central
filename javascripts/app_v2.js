@@ -36,7 +36,8 @@
 
   $(document).on('ready', function() {
     $('.js-add-condition').on('click', Condition.add);
-    return initialSelect();
+    initialSelect();
+    return $('#datepBox').datepicker();
   });
 
 }).call(this);

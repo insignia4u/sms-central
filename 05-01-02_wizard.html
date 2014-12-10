@@ -220,61 +220,48 @@
             </li>
           </ul>
           <h2>Add a Rule</h2>
+          <h4 class="legend">When <strong>sign up is today </strong>send the following message to <strong>all contacts</strong></h4>
           <form class="form-horizontal">
             <div class="control-group">
-              <div class="custom-formlabel custom-firstitem">Rule name:</div>
-              <div>
-                <input name="emailaddress" type="text" value="" class="input-xlarge placeholder">
-              </div>
+              <div class="custom-formlabel custom-firstitem"><strong>How would you like to compose your message?</strong></div>
             </div>
             <div class="control-group">
               <div class="custom-formlabel custom-firstitem">Apply this rule when:</div>
               <div><span class="custom-radio">
                   <input checked="checked" name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
-                  <label class="radio">sending SMS</label></span><span class="custom-radio">
+                  <label class="radio">Use a saved template</label></span><br><span class="custom-radio">
                   <input name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
-                  <label class="radio">receiving SMS</label></span><span class="custom-radio">
-                  <input name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
-                  <label class="radio">triggered by data</label></span></div>
+                  <label class="radio">Start from scranch</label></span></div>
             </div>
-            <h3 class="no-margin-left no-margin-top">Set Up your Rule</h3>
-            <div class="control-group licheck">
-              <div class="custom-formlabel custom-firstitem">When:</div>
-              <div class="contentcheck new-segment static no-padding-bottom no-padding-top js-insert-new-segment">
-                <div class="segment-item clearfix">
-                  <select name="number[]" class="select-segment customselect customselect2 w160 no-margin-left">
-                    <option value="1">Phone number</option>
-                    <option value="2">Phone number</option>
-                    <option value="3">Phone number</option>
-                  </select>
-                  <select name="is[]" class="select-segment-is customselect customselect2 w92 no-margin-right">
-                    <option value="1">is</option>
-                    <option value="2">is 2</option>
-                    <option value="3">is 3</option>
-                  </select>
-                  <select name="today[]" class="select-segment-is customselect customselect2 w160">
-                    <option value="1">Today</option>
-                    <option value="2">Today 2</option>
-                    <option value="3">Today 3</option>
-                  </select>
-                </div>
-                <div class="add-condition js-add-condition"><span>Add condition</span>
-                  <div class="icon-plus"></div>
+            <div id="text-and-tags">
+              <div id="text"><b>Text</b><br>
+                <textarea></textarea><strong>Approximately </strong><span class="num">153 </span>characters and <span class="num">2 </span>sms per contact
+                <div><a href="#" class="btn btn-small"><span>Cancel</span></a><a href="#" class="btn btn-small  btn-info"><span>Save</span></a></div>
+              </div>
+              <div id="tags">
+                <div>
+                  <p>Use any of the tags below to add special links or personalize your email. <a href="#">Learn more and see all the tags.</a></p>
+                  <ul>
+                    <li><a href="#">#firstname#</a></li>
+                    <li><a href="#">#mobile#</a></li>
+                    <li><a href="#">#fullname#</a></li>
+                    <li><a href="#">#country#</a></li>
+                    <li><a href="#">#email#</a></li>
+                    <li><a href="#">#custom 1#</a></li>
+                    <li><a href="#">#dateofbirth#</a></li>
+                    <li><a href="#">#custom 2#</a></li>
+                    <li><a href="#">#firstname#</a></li>
+                    <li><a href="#">#mobile#</a></li>
+                    <li><a href="#">#fullname#</a></li>
+                    <li><a href="#">#country#</a></li>
+                    <li><a href="#">#email#</a></li>
+                    <li><a href="#">#custom 1#</a></li>
+                    <li><a href="#">#dateofbirth#</a></li>
+                    <li><a href="#">#custom 2#</a></li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="control-group licheck">
-              <div class="custom-formlabel custom-firstitem">To:</div>
-              <select name="" class="select-segment customselect customselect2 w160 no-margin-left">
-                <option value="1">All contacts</option>
-                <option value="2">All contacts 1</option>
-                <option value="3">All contacts 2</option>
-              </select>
-            </div>
-            <!--if lte IE 7br(style="clear:both")
-            -->
-            <div style="display:block; text-align: left" class="buttons"><a data-wf-action="SR - Campaign Contact - Clicked - Cancel" href="https://my.smscentral.com.au/campaigns" class="btn btn-small"><span>Cancel</span></a><a data-wf-action="SR - Campaign Contact - Clicked - Save" href="javascript:void(0)" onclick="$('#submit_type').val('save');$('#contact_form').submit()" class="btn btn-small btn-info"><span>Next</span>
-                <!--i.icon-play-green--></a></div>
           </form>
         </div>
         <script type="template/sms" id="template_condition">

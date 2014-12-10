@@ -191,26 +191,7 @@
         <li>Add a New Campaign</li>
       </ul>
       <div class="maincontent">
-        <div class="sidebar">
-          <div class="control-group search-box">
-            <div class="controls">
-              <div class="input-prepend">
-                <form method="post" style="margin:0" action="https://my.smscentral.com.au/campaigns">
-                  <input id="prependedInput" type="text" placeholder="Search Campaigns" size="16" name="search_keyword" class="span2">
-                  <input type="submit" value="Search" class="lup">
-                </form>
-              </div>
-            </div>
-          </div>
-          <ul class="nav nav-pills nav-stacked">
-            <li class="first active"><a id="YourCampaign" data-wf-action="SR - Clicked - Your Campaign menu" href="/campaigns"><i class="icon-your-campaign"></i>YOUR CAMPAIGNS<span class="blueactive"></span></a></li>
-            <li><a id="RapidSMS" data-wf-action="SR - Clicked - Rapid SMS menu" href="/campaigns/rapid"><i class="icon-your-campaign"></i>RAPID SMS<span class="blueactive"></span></a></li>
-            <li><a id="DraftCampaign" data-wf-action="SR - Clicked - Draft Campaign menu" href="/campaigns/draft"><i class="icon-draft-campaign"></i>DRAFT CAMPAIGNS<span class="blueactive"></span></a></li>
-            <li><a id="ActiveCampaign" data-wf-action="SR - Clicked - Active Campaign menu" href="/campaigns/active"><i class="icon-active-campaign"></i>ACTIVE CAMPAIGNS<span class="blueactive"></span></a></li>
-            <li><a id="Inbox" data-wf-action="SR - Clicked - Inbox menu" href="/campaigns/inbox"><i class="icon-inbox"></i>INBOX<span class="blueactive"></span></a></li>
-          </ul>
-        </div>
-        <div id="newtemplate" class="contentleft">
+        <div id="newtemplate" class="contentall new-segment-layout">
           <ul class="steps">
             <li class="active">
               <div><span>1</span></div><strong>SETUP</strong>
@@ -219,84 +200,70 @@
               <div><span>2</span></div><strong>ACTIONS</strong>
             </li>
           </ul>
-          <h2>Add a Rule</h2>
-          <form class="form-horizontal">
-            <div class="control-group">
-              <div class="custom-formlabel custom-firstitem">Rule name:</div>
-              <div>
-                <input name="emailaddress" type="text" value="" class="input-xlarge placeholder">
+          <h2>New Segment</h2>
+          <form class="form-horizontal no-margin-left">
+            <div class="bartop">
+              <div class="control-group">
+                <label class="control-label">Contact math</label>
+                <div class="contentcheck static no-padding-bottom no-padding-top downbox">
+                  <div class="segment-item clearfix">
+                    <select name="who" class="select-segment-is customselect customselect2 w100 no-margin-left">
+                      <option value="1">Any</option>
+                    </select>
+                  </div>
+                </div>
+                <label class="control-label">of the following:</label>
+                <div id="add-list-numbers"><a href="#">Or create a segment from a list of numbers</a></div>
               </div>
             </div>
-            <div class="control-group">
-              <div class="custom-formlabel custom-firstitem">Apply this rule when:</div>
-              <div><span class="custom-radio">
-                  <input checked="checked" name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
-                  <label class="radio">sending SMS</label></span><span class="custom-radio">
-                  <input name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
-                  <label class="radio">receiving SMS</label></span><span class="custom-radio">
-                  <input name="rule" type="radio" value=""><span class="box"><span class="tick"></span></span>
-                  <label class="radio">triggered by data</label></span></div>
-            </div>
-            <h3 class="no-margin-left no-margin-top">Set Up your Rule</h3>
             <div class="control-group licheck">
-              <div class="custom-formlabel custom-firstitem">When:</div>
-              <div class="contentcheck new-segment static no-padding-bottom no-padding-top js-insert-new-segment">
-                <div class="segment-item clearfix">
+              <div class="custom-formlabel custom-firstitem">&nbsp;</div>
+              <div class="contentcheck new-segment static no-padding-bottom no-padding-top js-insert-new-segment segment">
+                <div class="segment-item clearfix mg-top-10">
                   <select name="number[]" class="select-segment customselect customselect2 w160 no-margin-left">
-                    <option value="1">Phone number</option>
-                    <option value="2">Phone number</option>
-                    <option value="3">Phone number</option>
+                    <option value="1">Signup date</option>
+                    <option value="2">Signup date</option>
+                    <option value="3">Signup date</option>
                   </select>
-                  <select name="is[]" class="select-segment-is customselect customselect2 w92 no-margin-right">
-                    <option value="1">is</option>
-                    <option value="2">is 2</option>
-                    <option value="3">is 3</option>
+                  <select name="is_after[]" class="select-segment-is customselect customselect2 w118">
+                    <option value="1">is after</option>
+                    <option value="2">is after</option>
+                    <option value="3">is after</option>
                   </select>
-                  <select name="today[]" class="select-segment-is customselect customselect2 w160">
-                    <option value="1">Today</option>
-                    <option value="2">Today 2</option>
-                    <option value="3">Today 3</option>
+                  <select name="date[]" class="select-segment-is customselect customselect2 w143">
+                    <option value="1">a specific date</option>
+                    <option value="2">a specific date</option>
+                    <option value="3">a specific date</option>
                   </select>
+                  <input name="xxx" type="text" value="" id="datepBox" class="input-xlarge placeholder icon-calendar">
                 </div>
                 <div class="add-condition js-add-condition"><span>Add condition</span>
                   <div class="icon-plus"></div>
                 </div>
               </div>
             </div>
-            <div class="control-group licheck">
-              <div class="custom-formlabel custom-firstitem">To:</div>
-              <select name="" class="select-segment customselect customselect2 w160 no-margin-left">
-                <option value="1">All contacts</option>
-                <option value="2">All contacts 1</option>
-                <option value="3">All contacts 2</option>
-              </select>
-            </div>
             <!--if lte IE 7br(style="clear:both")
             -->
-            <div style="display:block; text-align: left" class="buttons"><a data-wf-action="SR - Campaign Contact - Clicked - Cancel" href="https://my.smscentral.com.au/campaigns" class="btn btn-small"><span>Cancel</span></a><a data-wf-action="SR - Campaign Contact - Clicked - Save" href="javascript:void(0)" onclick="$('#submit_type').val('save');$('#contact_form').submit()" class="btn btn-small btn-info"><span>Next</span>
-                <!--i.icon-play-green--></a></div>
+            <div style="display:block" class="buttons"><a class="btn btn-small left"><span>Cancel</span></a><a id="campaign_next" class="btn btn-small btn-success right"><span>Preview Segment<i class="icon-list-green"></i></span></a></div>
           </form>
         </div>
         <script type="template/sms" id="template_condition">
-          <div class="segment-item clearfix">
-            <div class="button-close"></div>
-            <select name="number[]" class="select-segment customselect customselect2 w160">
+          <div class="segment-item clearfix with-icon-right">
+            <div class="button-close icon-trash"></div>
+            <select name="number[]" class="select-segment customselect customselect2 w160 no-margin-left">
               <option value="1">Phone number</option>
               <option value="2">Phone number</option>
               <option value="3">Phone number</option>
             </select>
-            <select name="is[]" class="select-segment-is customselect customselect2 w92">
-              <option value="1">is</option>
-              <option value="2">is 2</option>
-              <option value="3">is 3</option>
+            <select name="contains[]" class="select-segment-is customselect customselect2 w118">
+              <option value="1">Contains</option>
+              <option value="2">Contains 2</option>
+              <option value="3">Contains 3</option>
             </select>
-            <select name="today[]" class="select-segment-is customselect customselect2 w160">
-              <option value="1">Today</option>
-              <option value="2">Today 2</option>
-              <option value="3">Today 3</option>
-            </select>
+            <input name="emailaddress" type="text" value="" class="input-xlarge placeholder w162">
           </div>
         </script>
+        <script>$(document).on('')</script>
       </div>
     </div>
     <footer>
