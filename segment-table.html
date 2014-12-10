@@ -196,16 +196,160 @@
         <li>Add a New Campaign</li>
       </ul>
       <div class="maincontent">
-        <h2>Pantallas</h2>
-        <ul>
-          <li><a href="02-01-02_contacts.html"> 02-01-02_contacts</a></li>
-          <li><a href="05-01-01_wizard.html">   05-01-01_wizard</a></li>
-          <li><a href="05-01-02_wizard.html">   05-01-02_wizard</a></li>
-          <li><a href="03-03_add-segment.html"> 03-03_Add-segment</a></li>
-          <li><a href="03-07-columns.html">     03-07-columns</a></li>
-          <li><a href="contacts-list.html">     contacts-list</a></li>
-          <li><a href="segmente-table.html">     segment-table</a></li>
-        </ul>
+        <div class="innertab match-columns">
+          <div class="box-title clearfix">
+            <h2 class="title left">All contacts</h2>
+            <div class="optiontop right">
+              <select name="is_after[]" class="select-segment-is customselect customselect2 w118">
+                <option value="1">is after</option>
+                <option value="2">is after</option>
+                <option value="3">is after</option>
+              </select><a id="AddGroup" data-wf-action="Contacts - Clicked - Add a Group" href="https://my.smscentral.com.au/contacts/addgroup" class="btn btn-small btn-success"><span>Add a Group<i class="icon-list-green"></i></span></a><a id="AddContact" data-wf-action="Contacts - Clicked - Add a Contact" href="https://my.smscentral.com.au/contacts/add" class="btn btn-small btn-success"><span>Add a Contact<i class="icon-list-green"></i></span></a><a id="ImportContacts" data-ef-action="Contacts - Clicked - Import Contacts" href="https://my.smscentral.com.au/contacts/import" class="btn btn-small btn-info"><span>Import Contacts<i class="icon-export"></i></span></a>
+            </div>
+          </div>
+          <div class="bartop all-contacts-layout">
+            <form id="search_form" action="https://my.smscentral.com.au/contacts/allcontacts" method="post" name="search_form">
+              <div class="control-group search-box">
+                <div class="controls">
+                  <div class="input-prepend">
+                    <input id="prependedInput" type="text" size="16" placeholder="Search..." name="search" class="span2 placeholder">
+                    <input id="Search" type="button" value="Search" onclick="if (!$(&quot;#btn_filter&quot;).is(&quot;:disabled&quot;)) $(&quot;#search_form&quot;).submit()" class="lup">
+                  </div>
+                </div>
+              </div>
+              <div class="filtertable form-inline">
+                <div class="control-group datepicker-input">
+                  <label class="control-label">Filter from</label>
+                  <div class="controls">
+                    <div class="input-prepend">
+                      <input id="dp2" type="text" data-date-format="mm/dd/yy" value="" name="datefrom" placeholder="select date" style="" class="span2 placeholder"><span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="control-group datepicker-input">
+                  <label class="control-label">to</label>
+                  <div class="controls">
+                    <div class="input-prepend">
+                      <input id="dp3" type="text" data-date-format="mm/dd/yy" value="" name="dateto" placeholder="select date" style="" class="span2 placeholder"><span class="add-on"><i class="icon-calendar"></i></span>
+                    </div>
+                  </div>
+                </div><span class="btnsform">
+                  <input id="Filter" type="submit" value="Filter" class="btn"></span>
+              </div>
+              <div class="unsub"><a id="Unsbuscribed" data-wf-action="Contact Groups - Clicked - Unsubscribed link" href="https://my.smscentral.com.au/contacts/unsubscribed/">1221 </a>Unsubscribed Contact</div>
+            </form>
+          </div>
+          <h4 class="legend">
+            Found
+            &nbsp;<strong>300</strong>&nbsp;
+            active contacts listed below under the keywords<strong>"lorem ipsum". </strong>There are also<a href="#">123</a>&nbsp;
+            deleted contacts that match this results
+          </h4>
+          <div class="tablesaw-advance minimap">
+            <ul class="tablesaw-advance-dots">
+              <li><i></i></li>
+              <li><i></i></li>
+              <li><i></i></li>
+              <li><i></i></li>
+              <li><i></i></li>
+            </ul>
+          </div>
+          <div id="round-corner">
+            <table id="table2" data-tablesaw-mode="swipe" data-tablesaw-sortable="" data-tablesaw-sortable-switch="" data-tablesaw-minimap="" data-tablesaw-mode-switch="" class="tablesaw table col4">
+              <thead class="th40">
+                <tr>
+                  <th data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="persist">Phone</th>
+                  <th data-tablesaw-sortable-col="" data-tablesaw-priority="3">First name</th>
+                  <th data-tablesaw-sortable-col="" data-tablesaw-priority="2">Last name</th>
+                  <th data-tablesaw-sortable-col="" data-tablesaw-priority="1"><abbr title="Rotten Tomato Rating">Birthdate</abbr></th>
+                  <th data-tablesaw-sortable-col="" data-tablesaw-priority="4">Email</th>
+                  <th data-tablesaw-sortable-col="" data-tablesaw-priority="4">Last modified</th>
+                  <th data-tablesaw-sortable-col="" data-tablesaw-priority="4">Segment</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane">85458552152</a></td>
+                  <td class="har">Jack</td>
+                  <td>Bauer</td>
+                  <td>31 aug 2009</td>
+                  <td>jack.bauer@ctu.com</td>
+                  <td>31 aug 20009, by <a href="#">Catalina</a></td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane">85458552152</a></td>
+                  <td class="har">Jack</td>
+                  <td>Bauer</td>
+                  <td>31 aug 2009</td>
+                  <td>jack.bauer@ctu.com</td>
+                  <td>31 aug 20009, by <a href="#">Catalina</a></td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane">85458552152</a></td>
+                  <td class="har">Jack</td>
+                  <td>Bauer</td>
+                  <td>31 aug 2009</td>
+                  <td>jack.bauer@ctu.com</td>
+                  <td>31 aug 20009, by <a href="#">Catalina</a></td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane">85458552152</a></td>
+                  <td class="har">Jack</td>
+                  <td>Bauer</td>
+                  <td>31 aug 2009</td>
+                  <td>jack.bauer@ctu.com</td>
+                  <td>31 aug 20009, by <a href="#">Catalina</a></td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane">85458552152</a></td>
+                  <td class="har">Jack</td>
+                  <td>Bauer</td>
+                  <td>31 aug 2009</td>
+                  <td>jack.bauer@ctu.com</td>
+                  <td>31 aug 20009, by <a href="#">Catalina</a></td>
+                  <td>12</td>
+                </tr>
+              </tbody>
+            </table>
+            <div id="round-corner-scrollbar"></div>
+            <div class="footer">
+              <div class="showresult">Showing results 1 - 5 of 194</div>
+              <div class="selectpage">
+                <ul class="nav nav-pills">
+                  <li id="menu4" class="dropdown"><a href="#menu4" data-toggle="dropdown" style="width:95px" class="dropdown-toggle">5 / page<span class="add-on"><i class="icon-arrow-down"></i></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a id="View5" data-wf-action="Contact Groups - Clicked - view 5 per page" href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/5/">5 / page</a></li>
+                      <li><a id="View10" data-wf-action="Contact Groups - Clicked - view 10 per page" href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/10/">10 / page</a></li>
+                      <li><a id="View20" data-wf-action="Contact Groups - Clicked - view 20 per page" href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/20/">20 / page</a></li>
+                      <li><a id="View50" data-wf-action="Contact Groups - Clicked - view 50 per page" href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/50/">50 / page</a></li>
+                      <li><a id="View100" data-wf-action="Contact Groups - Clicked - view 100 per page" href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/100/">100 / page</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <ul class="pager">
+                <li>
+                  <div class="pagination">
+                    <ul>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/5/5">2</a></li>
+                      <li><a href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/5/10">3</a></li>
+                      <li><a href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/5/15">4</a></li>
+                      <li><a href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/5/20">5</a></li>
+                      <li><a href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/5/25">6</a></li>
+                      <li><a href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/5/5">Next »</a></li>
+                      <li><a href="https://my.smscentral.com.au/contacts/allcontacts/lastmodified/desc/5/190">Last</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer>

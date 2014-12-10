@@ -1,4 +1,20 @@
 (function() {
+  var mySwiper;
+
+  mySwiper = new Swiper('.swiper-container', {
+    scrollContainer: true,
+    mousewheelControl: true,
+    mode: 'horizontal',
+    scrollbar: {
+      container: '.swiper-scrollbar',
+      hide: false,
+      draggable: true
+    }
+  });
+
+}).call(this);
+
+(function() {
   var Condition, initialSelect;
 
   window.conditionTemplate = null;
@@ -38,6 +54,22 @@
     $('.js-add-condition').on('click', Condition.add);
     initialSelect();
     return $('#datepBox').datepicker();
+  });
+
+}).call(this);
+
+(function() {
+  var scrollTable;
+
+  scrollTable = new Swiper('#round-corner', {
+    scrollContainer: true,
+    mousewheelControl: true,
+    mode: 'horizontal',
+    scrollbar: {
+      container: '#round-corner-scrollbar',
+      hide: false,
+      draggable: true
+    }
   });
 
 }).call(this);
